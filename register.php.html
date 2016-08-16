@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<center> Register </center>
+	<form>
+	<center> <input type="text" placeholder ="First Name" required><br>
+	<center> <input type="text" placeholder ="Last Name" required><br>
+	<center> <input type="text" placeholder ="E-Mail Address" required><br>
+	<center> Date of Birth: </center>
+	<select name="date" required>
+    	<option value="">Date</option>
+    	<?php 
+
+		for($i=1; $i<=31; $i++)
+			{
+    			echo "<option value=".$i.">".$i."</option>";
+			}
+		?> 
+    	<option name="years"> </option>
+    </select>
+	<select name="month" required>
+    	<option value="">Month</option>
+    	<?php
+			$months = array("January", "February", "March","April","May", "June", "July","August","September", "November", "October","November","December");
+			for($i=0; $i<=12; $i++)
+				{
+    				echo "<option value=".$months[$i].">".$months[$i]."</option>";
+				}
+		?>
+  	</select>
+	<select name="year" required>
+    	<option value="">Year</option>
+		<?php
+    	for($i=date("Y"); $i>= date("Y") - 200; $i--)
+			{
+    			echo "<option value=".$i.">".$i."</option>";
+			}
+		?> 
+    	<option name="years"> </option>
+    </select>
+  	<br>
+	<center> <input type="text" placeholder ="Username" required><br>
+	<center> <input type="password" placeholder ="Password" required><br>
+	<center> <input type="password" placeholder ="Confirm Password" required><br>
+	<center><input type="submit" value="Sign Up">
+	<input type="submit" value="Cancel"><br>
+
+	</form>	
+</body>
+</html>
