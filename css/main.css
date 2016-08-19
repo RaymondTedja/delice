@@ -104,8 +104,26 @@ body
 		-o-transition: 0.5s all;
 		display: block;
 		width:40%;
-		background-color: #F83030;
-		border: 2px solid #F83030;
+		background-color: #2ebd59;
+		border: 2px solid #2ebd59;
+		border-radius:30px;
+}
+
+.testbtn4
+{
+		color: #FFF;
+		font-size: 1.20em;
+		text-transform: uppercase;
+		font-family:Montserrat;
+		padding: 0.7em 0.8em;
+		transition: 0.5s all;
+		-webkit-transition: 0.5s all;
+		-moz-transition: 0.5s all;
+		-o-transition: 0.5s all;
+		display: block;
+		width:40%;
+		background-color: #3b5998;
+		border: 2px solid #3b5998;
 		border-radius:30px;
 }
 
@@ -141,6 +159,22 @@ body
 	text-decoration: none;
 	color: white;
 	border: 2px solid rgba(255, 104, 34, 0.8);
+}
+
+.testbtn3:hover
+{
+	background-color: rgba(46, 189, 89, 0.8);
+	text-decoration: none;
+	color: white;
+	border: 2px solid rgba(46, 189, 89, 0.9);
+}
+
+.testbtn4:hover
+{
+	background-color: rgba(59, 89, 152, 0.8);
+	text-decoration: none;
+	color: white;
+	border: 2px solid rgba(59, 89, 152, 0.9);
 }
 
 .buttonhome
@@ -233,7 +267,7 @@ li a
 
 li a:hover
 {
-    background-color: #111;
+    color:#FFF;
 }
 
 .register
