@@ -73,7 +73,7 @@ body
 	border-radius: 65px;
 }
 
-.testbtn 
+.testbtn
 {
 		color: #FFF;
 		font-size: 1.20em;
@@ -91,7 +91,7 @@ body
 		border-radius:30px;
 }
 
-.testbtn3 
+.testbtn3
 {
 		color: #FFF;
 		font-size: 1.20em;
@@ -109,7 +109,7 @@ body
 		border-radius:30px;
 }
 
-.testbtn2 
+.testbtn2
 {
 		color: #FFF;
 		font-size: 1.20em;
@@ -172,7 +172,7 @@ footer
 	font-size:20px;
 	font-family:lato;
 	text-align: center;
-	
+
 }
 
 .glink
@@ -205,7 +205,7 @@ footer
 	margin-left: 3em;
 }
 
-ul 
+ul
 {
     list-style-type: none;
     margin: 0;
@@ -213,16 +213,16 @@ ul
     overflow: hidden;
     background-color: rgba(32, 32, 32, 0.5);
     position: fixed;
-    width: 100%;   
+    width: 100%;
     z-index: 100;
 }
 
-li 
+li
 {
     float: left;
 }
 
-li a 
+li a
 {
     display: block;
     color: white;
@@ -231,12 +231,12 @@ li a
     text-decoration: none;
 }
 
-li a:hover 
+li a:hover
 {
     background-color: #111;
 }
 
-.register 
+.register
 {
 	font-size: 1.20em;
 	text-transform: uppercase;
@@ -245,13 +245,22 @@ li a:hover
 	width:40%;
 }
 
-.register2 
+.register2
 {
 	font-size: 1.20em;
 	text-transform: uppercase;
 	font-family:Montserrat;
 	padding: 0.7em 0.8em;
 	width:13%;
+}
+
+.login
+{
+	font-size: 1.20em;
+	text-transform: uppercase;
+	font-family:Montserrat;
+	padding: 0.7em 0.8em;
+	width:40%;
 }
 
 .formpad
