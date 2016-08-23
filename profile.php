@@ -37,6 +37,32 @@
         </div>
         <div style="style:clear">
       </div>
-    </div> 
+    </div>
+    <div class="bgcontent">
+      <div class="padprofile">
+        <div class="img-fluid">
+            <div class="row">
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <img src="img/b2.jpg" class="p1">
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <img src="img/b3.jpg" class="p1">
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <img src="img/b4.jpg" class="p1">
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <img src="img/b5.jpg" class="p1">
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <img src="img/b6.jpg" class="p1">
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                <img src="img/b7.jpg" class="p1">
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
   </body>
 </html>
