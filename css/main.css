@@ -306,3 +306,55 @@ hr
 {
 	width:25%;
 }
+
+.bgprofile
+{
+	height:420px;
+	background-color: #FFFB96;
+}
+
+.padprofile
+{
+	padding-top: 150px;
+	padding-left: 350px;
+}
+
+.pp 
+{
+	width:14em;
+	height:14em;
+	text-align: center;
+	border-radius: 50%;
+	float:left;
+}
+
+.ppname
+{
+	font-size:30px;
+	font-family:lato;
+	padding-left:250px;
+	padding-top:20px;
+}
+
+.bio
+{
+	font-size:16px;
+	font-family:lato;
+	padding-left:255px;
+	padding-top:20px;
+}
+
+.biopost
+{
+	font-size:16px;
+	font-family:lato;
+	padding-left:40px;
+	padding-top:40px;
+	float:left;
+}
+
+.bios
+{
+	float:left;
+	padding-left:20px;
+}
