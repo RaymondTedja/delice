@@ -288,6 +288,13 @@ li a:hover
 	width:13%;
 }
 
+.bgregis
+{
+	padding-top:70px;
+}
+
+/* Login Page */
+
 .login
 {
 	font-size: 1.20em;
@@ -295,6 +302,11 @@ li a:hover
 	font-family:Montserrat;
 	padding: 0.7em 0.8em;
 	width:40%;
+}
+
+.bglogin
+{
+	padding-top:250px;	
 }
 
 .formpad
@@ -306,6 +318,8 @@ hr
 {
 	width:25%;
 }
+
+/* Profile Page */
 
 .bgprofile
 {
@@ -359,11 +373,102 @@ hr
 	padding-left:20px;
 }
 
-.bgcontent .padprofile
+.header li a
 {
-	padding-left:200px;
+	font-family: MerriWeather;
+}
+
+.bgcontent .padcon1
+{
+	padding-left:100px;
 }
 
 .bgcontent .p1
 {
+	height:400px;
+	width:24em;
+	border-radius: 0px;
+	float:left;
+}
+
+
+.bgcontent
+{
+	padding-top:100px;
+}
+
+/* Main Page */
+
+.mainbackground
+{
+	height:auto;
+	background-color: #EEEEEE;
+}
+
+.pmain
+{
+	width:750px;
+	height:650px;
+}
+
+.maincontent
+{
+	width:750px;
+	height:auto;
+	font-family: lato;
+	font-size: 16px;
+	background-color: white;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.maintext
+{
+	margin-left: 20px;
+	padding-top: 20px;
+
+}
+
+.maintext .pp
+{
+	width:50px;
+	height:50px;
+	margin-bottom: 10px;
+
+}
+
+.username
+{
+	margin-left: 20px;
+	padding-top: 10px;
+	float:left;
+	font-weight: bold;
+}
+
+.mainbackground .padcon1
+{	
+	margin-left: 30%;
+	margin-right: 30.5%;
+}
+
+.maincheckin
+{
+	width:750px;
+	height:auto;
+	font-family: lato;
+	font-size: 16px;
+	background-color: white;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.checkintext
+{
+	padding-top:10px;
+	padding-left: 180px;
+}
+
+.maintext .like
+{
+	font-weight: bold;
 }

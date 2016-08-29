@@ -9,7 +9,7 @@
   <body>
     <div class="header">        
         <ul>
-          <li><a class="active" href="#home">Delice</a></li>
+          <li><a class="active" href="index.php">Delice</a></li>
           <li><a href="#news">News</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#about">About</a></li>
@@ -39,30 +39,47 @@
       </div>
     </div>
     <div class="bgcontent">
-      <div class="padprofile">
+      <div class="padcon1">
         <div class="img-fluid">
             <div class="row">
-              <div class="col-xs-6 col-sm-4 col-md-4">
+              <div>
                 <img src="img/b2.jpg" class="p1">
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-4">
+              <div>
                 <img src="img/b3.jpg" class="p1">
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-4">
+              <div>
                 <img src="img/b4.jpg" class="p1">
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-4">
+              <div>
                 <img src="img/b5.jpg" class="p1">
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-4">
+              <div>
                 <img src="img/b6.jpg" class="p1">
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-4">
+              <div>
                 <img src="img/b7.jpg" class="p1">
             </div>
+            <div style="style:clear">
           </div>
         </div>        
       </div>
     </div>
+
+    <footer>
+      
+      <div class="logo">
+        <a href="#"><img src="img/fb.png" class="soclogo"></a>
+        <a href="#"><img src="img/twi.png" class="soclogo"></a>
+        <a href="#"><img src="img/ins.png" class="soclogo"></a>
+      </div>
+      <div class="link">
+        <a href="#" class="glink">Home</a>
+        <a href="#" class="glink">Contact</a>
+        <a href="#" class="glink">Explore</a>
+        <a href="#" class="glink">Terms</a>
+        <a href="#" class="glink">Privacy</a>
+      </div>
+    </footer>
   </body>
 </html>
