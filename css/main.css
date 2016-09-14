@@ -104,8 +104,26 @@ body
 		-o-transition: 0.5s all;
 		display: block;
 		width:40%;
-		background-color: #F83030;
-		border: 2px solid #F83030;
+		background-color: #2ebd59;
+		border: 2px solid #2ebd59;
+		border-radius:30px;
+}
+
+.testbtn4
+{
+		color: #FFF;
+		font-size: 1.20em;
+		text-transform: uppercase;
+		font-family:Montserrat;
+		padding: 0.7em 0.8em;
+		transition: 0.5s all;
+		-webkit-transition: 0.5s all;
+		-moz-transition: 0.5s all;
+		-o-transition: 0.5s all;
+		display: block;
+		width:40%;
+		background-color: #3b5998;
+		border: 2px solid #3b5998;
 		border-radius:30px;
 }
 
@@ -141,6 +159,22 @@ body
 	text-decoration: none;
 	color: white;
 	border: 2px solid rgba(255, 104, 34, 0.8);
+}
+
+.testbtn3:hover
+{
+	background-color: rgba(46, 189, 89, 0.8);
+	text-decoration: none;
+	color: white;
+	border: 2px solid rgba(46, 189, 89, 0.9);
+}
+
+.testbtn4:hover
+{
+	background-color: rgba(59, 89, 152, 0.8);
+	text-decoration: none;
+	color: white;
+	border: 2px solid rgba(59, 89, 152, 0.9);
 }
 
 .buttonhome
@@ -233,7 +267,7 @@ li a
 
 li a:hover
 {
-    background-color: #111;
+    color:#FFF;
 }
 
 .register
@@ -254,6 +288,13 @@ li a:hover
 	width:13%;
 }
 
+.bgregis
+{
+	padding-top:70px;
+}
+
+/* Login Page */
+
 .login
 {
 	font-size: 1.20em;
@@ -261,6 +302,11 @@ li a:hover
 	font-family:Montserrat;
 	padding: 0.7em 0.8em;
 	width:40%;
+}
+
+.bglogin
+{
+	padding-top:250px;	
 }
 
 .formpad
@@ -271,4 +317,158 @@ li a:hover
 hr
 {
 	width:25%;
+}
+
+/* Profile Page */
+
+.bgprofile
+{
+	height:420px;
+	background-color: #FFFB96;
+}
+
+.padprofile
+{
+	padding-top: 150px;
+	padding-left: 350px;
+}
+
+.pp 
+{
+	width:14em;
+	height:14em;
+	text-align: center;
+	border-radius: 50%;
+	float:left;
+}
+
+.ppname
+{
+	font-size:30px;
+	font-family:lato;
+	padding-left:250px;
+	padding-top:20px;
+}
+
+.bio
+{
+	font-size:16px;
+	font-family:lato;
+	padding-left:255px;
+	padding-top:20px;
+}
+
+.biopost
+{
+	font-size:16px;
+	font-family:lato;
+	padding-left:40px;
+	padding-top:40px;
+	float:left;
+}
+
+.bios
+{
+	float:left;
+	padding-left:20px;
+}
+
+.header li a
+{
+	font-family: MerriWeather;
+}
+
+.bgcontent .padcon1
+{
+	padding-left:100px;
+}
+
+.bgcontent .p1
+{
+	height:400px;
+	width:24em;
+	border-radius: 0px;
+	float:left;
+}
+
+
+.bgcontent
+{
+	padding-top:100px;
+}
+
+/* Main Page */
+
+.mainbackground
+{
+	height:auto;
+	background-color: #EEEEEE;
+}
+
+.pmain
+{
+	width:750px;
+	height:650px;
+}
+
+.maincontent
+{
+	width:750px;
+	height:auto;
+	font-family: lato;
+	font-size: 16px;
+	background-color: white;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.maintext
+{
+	margin-left: 20px;
+	padding-top: 20px;
+
+}
+
+.maintext .pp
+{
+	width:50px;
+	height:50px;
+	margin-bottom: 10px;
+
+}
+
+.username
+{
+	margin-left: 20px;
+	padding-top: 10px;
+	float:left;
+	font-weight: bold;
+}
+
+.mainbackground .padcon1
+{	
+	margin-left: 30%;
+	margin-right: 30.5%;
+}
+
+.maincheckin
+{
+	width:750px;
+	height:auto;
+	font-family: lato;
+	font-size: 16px;
+	background-color: white;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.checkintext
+{
+	padding-top:10px;
+	padding-left: 180px;
+}
+
+.maintext .like
+{
+	font-weight: bold;
 }
