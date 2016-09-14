@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,15 +22,21 @@
   <div class="title2" style="padding-top:50px;padding-bottom:5px;">
     <center> Login </center>
   </div>
-  <form method="POST" action="">
+  <form method="POST" action="log.php">
     <div class="formpad">
-      <input type="text" class="login" placeholder ="Username" required>
+      <input type="text" class="login" placeholder ="Username" name="username" required>
       <br><br>
-    	<input type="password" class="login" login placeholder ="Password" required>
+    	<input type="password" class="login" login placeholder ="Password" name="password" required>
       <br><br>
       <input type="submit" class="testbtn4" value="Login">
       <br>
     </div>
+    <?php
+    if(isset($_SESSION['error'])){
+    echo $_SESSION['error'];
+    unset($_SESSION['error']);
+    }
+    ?>
   </form>
 </div>
 </body>

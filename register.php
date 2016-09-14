@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -64,6 +69,12 @@
 				<input type="password" class="register" placeholder ="Confirm Password" required><br><br>
 				<input type="submit" class="testbtn3" value="Sign Up">
 				</div>
+				<?php
+    			if(isset($_SESSION['used'])){
+    			echo $_SESSION['used'];
+    			unset($_SESSION['used']);
+    			}
+    			?>
 		</form>	
 	</body>
 </html>
