@@ -24,9 +24,9 @@
 		<hr>
 		<form method="POST" action="reg.php">
 			<div class="formpad">
-				<input type="text" class="register" placeholder ="First Name" required><br><br>
-				<input type="text" class="register" placeholder ="Last Name" required><br><br>
-				<input type="text" class="register" placeholder ="E-Mail Address" required><br><br>
+				<input type="text" class="register" placeholder ="First Name"  name="firstname" required><br><br>
+				<input type="text" class="register" placeholder ="Last Name" name="lastname"required><br><br>
+				<input type="text" class="register" placeholder ="E-Mail Address" name="email"required><br><br>
 				 Date of Birth:<br>
 				<select name="date" class="register2" required>
 			    	<option value="">Date</option>
@@ -59,8 +59,8 @@
 			    	<option name="years"> </option>
 			    </select>
 			  	<br><br>
-				 <input type="text" class="register" placeholder ="Username" required><br><br>
-				 <input type="password" class="register" placeholder ="Password" required><br><br>
+				 <input type="text" class="register" placeholder ="Username" name="username"required><br><br>
+				 <input type="password" class="register" placeholder ="Password" name="password"required><br><br>
 				<input type="password" class="register" placeholder ="Confirm Password" required><br><br>
 				<input type="submit" class="testbtn3" value="Sign Up">
 				</div>
