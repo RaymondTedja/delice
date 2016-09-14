@@ -1,6 +1,7 @@
 --create database delice              
                                     
-create table t_customer(          
+create table t_customer(    
+	userId int UNIQUE NOT NULL AUTO_INCREMENT,      
 	username varchar(255) NOT NULL PRIMARY KEY,
 	userPassword varchar(255) NOT NULL,
 	firstName varchar(255),          
