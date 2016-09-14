@@ -21,7 +21,7 @@ if ($result && mysqli_num_rows($result) > 0)
     }
 else
     {
-    	$sql = "INSERT INTO t_customer (username, password, firstName, lastName, emailAddress, dob)
+    	$sql = "INSERT INTO t_customer (username, userPassword, firstName, lastName, email, dob)
 		VALUES ('$username','$password', '$firstName', '$lastName', '$email', '$dob')";
 		if ($conn->query($sql) === TRUE) 
 		{
