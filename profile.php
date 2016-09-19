@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+  session_start();
+?>
 <html>
 <head>
   <title> Delice - Profile page </title>
@@ -7,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
   <body>
-    <div class="header">        
+    <div class="header">
         <ul>
           <li><a class="active" href="index.php">Delice</a></li>
           <li><a href="#news">News</a></li>
@@ -19,17 +22,18 @@
       <div class="padprofile">
         <img src="img/pp.jpeg" class="pp">
         <div class="ppname">
-          Raissa Andriana
+          <?php echo $_SESSION['profile']['firstName']?>
+          <?php echo ' ' . $_SESSION['profile']['lastName']?>
         </div>
         <div class="bio">
-          Hi, my name is Raissa
+          <?php echo 'Hi, my name is ' . $_SESSION['profile']['firstName']?>
         </div>
         <div class="biopost">
           <div class="bios">
-            23 Stories 
+            23 Stories
           </div>
           <div class="bios">
-            10 Following 
+            10 Following
           </div>
           <div class="bios">
             34k Followers
@@ -62,12 +66,12 @@
             </div>
             <div style="style:clear">
           </div>
-        </div>        
+        </div>
       </div>
     </div>
 
     <footer>
-      
+
       <div class="logo">
         <a href="#"><img src="img/fb.png" class="soclogo"></a>
         <a href="#"><img src="img/twi.png" class="soclogo"></a>
