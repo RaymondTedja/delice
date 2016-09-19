@@ -9,8 +9,8 @@ $result = mysqli_query($conn,$query);
 if ($result && mysqli_num_rows($result) > 0)
     {
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['username']= $row['username'];
-        header('location: main.php');
+        $_SESSION['profile'] = $row;
+        header('location: index.php');
     }
 else
     {
