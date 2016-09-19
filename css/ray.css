@@ -1,0 +1,22 @@
+.pp2
+{
+	width:1em;
+	height:1em;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.pptitle{
+	font-size:50px;
+	font-family:compact;
+	font-weight: lighter;
+	padding-bottom:30px;
+}
+
+.editProfile
+{
+	font-size: 1.00em;
+	font-family:Montserrat;
+	padding: 0.7em 0.8em;
+	width:40%;
+}
