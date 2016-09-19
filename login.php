@@ -30,13 +30,18 @@ session_start();
       <br><br>
       <input type="submit" class="testbtn4" value="Login">
       <br>
-    </div>
+      <?php
+      if(isset($_SESSION['error'])){
+    ?>
+    <div class="alert alert-danger">
     <?php
-    if(isset($_SESSION['error'])){
-    echo $_SESSION['error'];
-    unset($_SESSION['error']);
+      echo $_SESSION['error'];
+      unset($_SESSION['error']);
     }
     ?>
+    </div>
+    
+  </div>
   </form>
 </div>
 </body>

@@ -239,7 +239,7 @@ footer
 	margin-left: 3em;
 }
 
-ul
+/*ul
 {
     list-style-type: none;
     margin: 0;
@@ -263,7 +263,7 @@ li a
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+}*/
 
 li a:hover
 {
@@ -471,4 +471,10 @@ hr
 .maintext .like
 {
 	font-weight: bold;
+}
+
+.alert-danger
+{
+	text-align: center;
+	margin-right: 60%;
 }
