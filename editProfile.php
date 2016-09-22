@@ -11,14 +11,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
   <body>
-    <div class="header">
-        <ul>
-          <li><a class="active" href="index.php">Delice</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
+    <div class="background">
+			<nav class="navbar navbar-inverse">
+			    <div class="container-fluid">
+			    	<div class="navbar-header">
+			        	<a class="navbar-brand" href="index.php">Delice</a>
+			    	</div>
+
+			    	<ul class="nav navbar-nav">
+			      		<li class="active"><a href="main.php">Home</a></li>
+			      		<li><a href="#">Explore</a></li>
+			    	</ul>
+
+			    	<ul class="nav navbar-nav navbar-right">
+			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['username']; ?></a></li>
+			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+			    	</ul>
+
+			  	</div>
+        </div>
       <div class="bgregis">
 
     <form method="POST" action="editProf.php">
