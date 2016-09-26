@@ -1,19 +1,20 @@
 <?php
 session_start();
 $conn = new mysqli('localhost', 'root', '', 'delice');
-$firstName = $_POST['firstname'];
-$lastName = $_POST['lastname'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-$username = $_SESSION['profile']['username'];
+$address = $_POST['address'];
+$bio = $_POST['bio'];
+$username = $_SESSION['profile']['v_username'];
 
-$query = "SELECT * from t_customer where username = '$username'";
+$query = "SELECT * from t_user where v_username = '$username'";
 $result = mysqli_query($conn,$query);
 
 if ($result && mysqli_num_rows($result) > 0)
     {
-        $sql = " UPDATE t_customer
-        SET firstName='$firstName', lastName='$lastName', email='$email'
-        where username = '$username' ";
+        $sql = " UPDATE t_user
+        SET v_name='$name', v_email='$email', v_bio='$bio', v_address='$address'
+        where v_username = '$username' ";
 
         if ($conn->query($sql) === TRUE)
     		{

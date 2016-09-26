@@ -4,7 +4,7 @@ $conn = new mysqli('localhost', 'root', '', 'delice');
 $username = $_POST['username'];
 $password = md5($_POST['password']);
 
-$query = "SELECT * from t_customer where username = '$username' and userPassword = '$password'";
+$query = "SELECT * from t_user where v_username = '$username' and v_password = '$password'";
 $result = mysqli_query($conn,$query);
 if ($result && mysqli_num_rows($result) > 0)
     {

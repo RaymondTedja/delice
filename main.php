@@ -89,7 +89,7 @@ if(!isset($_SESSION['profile']))
 
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">
-						<p class="username"><?php 
+						<p class="username"><?php
 						echo $_SESSION['profile']['firstName'];
           				echo ' ' . $_SESSION['profile']['lastName']?></p>
 					</div>
@@ -109,7 +109,7 @@ if(!isset($_SESSION['profile']))
 				<div class="maincheckin">
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">
-						<p class="username"><?php 
+						<p class="username"><?php
 						echo $_SESSION['profile']['firstName'];
           				echo ' ' . $_SESSION['profile']['lastName']?></p><p class="checkintext"> has checked in at Lestari Restaurant</p>
 						<div style="style:clear"></div>
@@ -119,4 +119,3 @@ if(!isset($_SESSION['profile']))
 		</div>
 	</body>
 </html>
-
