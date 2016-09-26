@@ -52,15 +52,18 @@
         <input type="submit" class="testbtn3" value="Sign Up">
         -->
 
-
+        <?php
+        if(isset($_SESSION['error'])){
+        ?>
+        <div class="alert alert-danger">
+        <?php
+          echo $_SESSION['error'];
+          unset($_SESSION['error']);
+        }
+        ?>
 
         </div>
-        <?php
-          if(isset($_SESSION['used'])){
-          echo $_SESSION['used'];
-          unset($_SESSION['used']);
-          }
-          ?>
+
     </form>
 
     <footer>
