@@ -18,7 +18,7 @@ if(!isset($_SESSION['profile']))
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body class="mainbody">
 
 		<div class="mainbackground">
 			<nav class="navbar navbar-inverse">
@@ -81,11 +81,29 @@ if(!isset($_SESSION['profile']))
 			</nav>
 
 			<div class="padcon1">
+				<div class="addContent">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="addStory">
+								<img src="img/add.png" class="addImg">
+								Add story
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="addCheckIn">
+								<img src="img/checkin.png" class="checkinImg">
+								Check in 
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="maincontent">
 
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">
-						<p class="username">RaisaAndriana</p>
+						<p class="username"><?php
+						echo $_SESSION['profile']['firstName'];
+          				echo ' ' . $_SESSION['profile']['lastName']?></p>
 					</div>
 
 					<img src="img/b8.jpg" class="pmain">
@@ -103,7 +121,9 @@ if(!isset($_SESSION['profile']))
 				<div class="maincheckin">
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">
-						<p class="username">RaisaAndriana</p><p class="checkintext"> has checked in at Lestari Restaurant</p>
+						<p class="username"><?php
+						echo $_SESSION['profile']['firstName'];
+          				echo ' ' . $_SESSION['profile']['lastName']?></p><p class="checkintext"> has checked in at Lestari Restaurant</p>
 						<div style="style:clear"></div>
 					</div>
 				</div>
@@ -111,4 +131,3 @@ if(!isset($_SESSION['profile']))
 		</div>
 	</body>
 </html>
-

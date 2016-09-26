@@ -3,7 +3,7 @@ session_start();
 $conn = new mysqli('localhost', 'root', '', 'delice');
 $firstName = $_POST['firstname'];
 $lastName = $_POST['lastname'];
-$fullname = $firstName . $lastName;
+$fullname = $firstName . " " . $lastName;
 $email = $_POST['email'];
 $date = $_POST['date'];
 $month = $_POST['month'];
@@ -12,7 +12,7 @@ $dob = $date . " " . $month . " " . $year;
 $username = $_POST['username'];
 $password = md5($_POST['password']);
 
-$query = "SELECT username from t_user where v_username = '$username'";
+$query = "SELECT v_username from t_user where v_username = '$username'";
 $result = mysqli_query($conn,$query);
 if ($result && mysqli_num_rows($result) > 0)
 
@@ -22,7 +22,7 @@ if ($result && mysqli_num_rows($result) > 0)
     }
 else
     {
-    	$sql = "INSERT INTO t_user (v_username, v_password, v_name, v_email, v_dob)
+    	$sql = "INSERT INTO t_user (v_username, v_Password, v_name, v_email, v_dob)
 		VALUES ('$username','$password', '$fullname', '$email', '$dob')";
 		if ($conn->query($sql) === TRUE)
 		{

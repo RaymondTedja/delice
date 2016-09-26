@@ -23,23 +23,22 @@
 			    	</ul>
 
 			    	<ul class="nav navbar-nav navbar-right">
-			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['username']; ?></a></li>
+			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['v_username']; ?></a></li>
 			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			    	</ul>
 
 			  	</div>
         </nav>
       </div>
-    <div class="bgprofile">
+    <div class="bgprofile" >
       <div class="padprofile">
         <img src="img/pp.jpeg" class="pp">
         <div class="ppname">
-          <?php echo $_SESSION['profile']['firstName']?>
-          <?php echo ' ' . $_SESSION['profile']['lastName']?>
+          <?php echo $_SESSION['profile']['v_name']?>
           <a href="editprofile.php" class="buttonEdit">Edit Profile</a>
         </div>
         <div class="bio">
-          <?php echo 'Hi, my name is ' . $_SESSION['profile']['firstName']?>
+          <?php echo $_SESSION['profile']['v_bio']?>
         </div>
         <div class="biopost">
           <div class="bios">

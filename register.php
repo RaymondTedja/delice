@@ -39,9 +39,9 @@ if(isset($_SESSION['profile']))
 		<hr>
 		<form method="POST" action="reg.php">
 			<div class="formpad">
-				<input type="text" class="register" placeholder ="First Name"  name="firstname" required><br><br>
-				<input type="text" class="register" placeholder ="Last Name" name="lastname"required><br><br>
-				<input type="text" class="register" placeholder ="E-Mail Address" name="email"required><br><br>
+				<input type="text" class="register" placeholder ="First Name"  name="firstname" maxlength="16" required><br><br>
+				<input type="text" class="register" placeholder ="Last Name" name="lastname" maxlength="16" required><br><br>
+				<input type="text" class="register" placeholder ="E-Mail Address" name="email" required><br><br>
 				 Date of Birth:<br>
 				<select name="date" class="register2" required>
 			    	<option value="">Date</option>

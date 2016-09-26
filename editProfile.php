@@ -2,6 +2,12 @@
 <?php
   session_start();
 ?>
+<?php
+  if ( $_SESSION['profile']['v_bio'] === NULL )
+  {
+    $bio = "" ;
+  }
+?>
 <html>
 <head>
   <title> Delice - Profile page </title>
@@ -24,7 +30,7 @@
 			    	</ul>
 
 			    	<ul class="nav navbar-nav navbar-right">
-			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['username']; ?></a></li>
+			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['v_username']; ?></a></li>
 			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			    	</ul>
 
@@ -36,13 +42,12 @@
       <div class="formpad">
 
         <div class="pptitle" style="padding-top:20px;padding-bottom:35px;">
-              <img style="margin-right:30px;" src="img/pp.jpeg" class="pp2"> <?php echo $_SESSION['profile']['username']?>
+              <img style="margin-right:30px;" src="img/pp.jpeg" class="pp2"> <?php echo $_SESSION['profile']['v_username']?>
         </div>
-        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['firstName']?> name="firstname" placeholder="First Name" required><br><br>
-        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['lastName']?>  name="lastname" placeholder="Last Name" required><br><br>
-        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['email']?>  name="email" placeholder="Email" required><br><br>
-
-        <textarea class="editProfile" rows="5" cols="50" name="bio" placeholder="Your magnificient Bio goes here " ></textarea>
+        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['v_name']?> name="name" placeholder="Full name" maxlength="32" required><br><br>
+        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['v_email']?>  name="email" placeholder="Email" required><br><br>
+        <input type="text" class="editProfile" value="<?php echo $_SESSION['profile']['v_address']?>"  name="address" placeholder="The city you live at" required><br><br>
+        <textarea style="resize: none;" class="editProfile" rows="5" cols="50" name="bio" placeholder="Your magnificient Bio goes here " maxlength="150" ><?php echo $_SESSION['profile']['v_bio']?></textarea>
         <br><br><br>
         <input type="submit" class="testbtn3" value="Submit">
         <br><br>
