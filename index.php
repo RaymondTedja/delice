@@ -1,7 +1,7 @@
 <?php
 	Session_start();
 ?>
-<?php 
+<?php
 if(isset($_SESSION['profile']))
 {
 	header('location: main.php');
@@ -31,7 +31,7 @@ if(isset($_SESSION['profile']))
 			    	<?php if(isset($_SESSION['profile']))
 			    	{?>
 			    	<ul class="nav navbar-nav navbar-right">
-			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['username']; ?></a></li>
+			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['v_username']; ?></a></li>
 			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			    	</ul>
 			    	<?php }?>
@@ -104,5 +104,3 @@ if(isset($_SESSION['profile']))
 		</footer>
 	</body>
 </html>
-
-
