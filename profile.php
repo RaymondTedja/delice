@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
   <body>
-    <div class="background">
+    <div>
 			<nav class="navbar navbar-inverse">
 			    <div class="container-fluid">
 			    	<div class="navbar-header">
@@ -28,12 +28,15 @@
 			    	</ul>
 
 			  	</div>
+        </nav>
+      </div>
     <div class="bgprofile">
       <div class="padprofile">
         <img src="img/pp.jpeg" class="pp">
         <div class="ppname">
           <?php echo $_SESSION['profile']['firstName']?>
           <?php echo ' ' . $_SESSION['profile']['lastName']?>
+          <a href="editprofile.php" class="buttonEdit">Edit Profile</a>
         </div>
         <div class="bio">
           <?php echo 'Hi, my name is ' . $_SESSION['profile']['firstName']?>
