@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
   <body>
-    <div class="background">
+    <div>
 			<nav class="navbar navbar-inverse">
 			    <div class="container-fluid">
 			    	<div class="navbar-header">
@@ -38,9 +38,9 @@
         <div class="pptitle" style="padding-top:20px;padding-bottom:35px;">
               <img style="margin-right:30px;" src="img/pp.jpeg" class="pp2"> <?php echo $_SESSION['profile']['username']?>
         </div>
-        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['firstName']?> name="firstname" required><br><br>
-        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['lastName']?>  name="lastname" required><br><br>
-        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['email']?>  name="email"required><br><br>
+        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['firstName']?> name="firstname" placeholder="First Name" required><br><br>
+        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['lastName']?>  name="lastname" placeholder="Last Name" required><br><br>
+        <input type="text" class="editProfile" value=<?php echo $_SESSION['profile']['email']?>  name="email" placeholder="Email" required><br><br>
 
         <textarea class="editProfile" rows="5" cols="50" name="bio" placeholder="Your magnificient Bio goes here " ></textarea>
         <br><br><br>
