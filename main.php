@@ -18,7 +18,7 @@ if(!isset($_SESSION['profile']))
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body class="mainbody">
 
 		<div class="mainbackground">
 			<nav class="navbar navbar-inverse">
@@ -82,8 +82,20 @@ if(!isset($_SESSION['profile']))
 
 			<div class="padcon1">
 				<div class="addContent">
-					<img src="img/add.png">
-					<img src="img/checkin.png">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="addStory">
+								<img src="img/add.png" class="addImg">
+								Add story
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="addCheckIn">
+								<img src="img/checkin.png" class="checkinImg">
+								Check in 
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="maincontent">
 

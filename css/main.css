@@ -417,6 +417,7 @@ hr
 	background-color: white;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
+	box-shadow: 0px 0px 1px;
 }
 
 .maintext
@@ -457,6 +458,7 @@ hr
 	background-color: white;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
+	box-shadow: 0 0 1px;
 }
 
 .checkintext
@@ -502,4 +504,47 @@ hr
 {
 	text-decoration: none;
 	color:#000000;
+}
+
+.addImg
+{
+	width:4em;
+	height: 4em;
+}
+
+.checkinImg
+{
+	width:4em;
+	height:4em;
+
+}
+
+.addContent
+{
+	width:47em;
+	height:auto;
+	font-family: lato;
+	font-size: 16px;
+	background-color: white;
+	padding-bottom: 0.7em;
+	padding-top: 0.7em;
+	margin-bottom: 2em;
+	box-shadow: 0px 0 1px;
+}
+
+.addStory
+{
+	text-align: center;
+
+}
+
+.addCheckIn
+{
+	text-align: center;
+	border-left: ridge;
+}
+
+.mainbody .padcon1
+{
+	padding-top: 2em;
 }
