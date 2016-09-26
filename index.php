@@ -1,6 +1,12 @@
 <?php
 	Session_start();
 ?>
+<?php 
+if(isset($_SESSION['profile']))
+{
+	header('location: main.php');
+}
+?>
 <html>
 	<head>
 	<title>
@@ -22,11 +28,13 @@
 			      		<li class="active"><a href="main.php">Home</a></li>
 			      		<li><a href="#">Explore</a></li>
 			    	</ul>
-
+			    	<?php if(isset($_SESSION['profile']))
+			    	{?>
 			    	<ul class="nav navbar-nav navbar-right">
 			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['username']; ?></a></li>
 			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			    	</ul>
+			    	<?php }?>
 
 			  	</div>
 			</nav>
@@ -96,3 +104,4 @@
 		</footer>
 	</body>
 </html>
+
