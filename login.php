@@ -1,6 +1,12 @@
 <?php
 session_start();
 ?>
+<?php
+if(isset($_SESSION['profile']))
+{
+	header('location: main.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

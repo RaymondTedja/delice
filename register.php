@@ -2,6 +2,12 @@
 <?php
 session_start();
 ?>
+<?php
+if(isset($_SESSION['profile']))
+{
+	header('location: main.php');
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -45,13 +51,13 @@ session_start();
 				 Date of Birth:<br>
 				<select name="date" class="register2" required>
 			    	<option value="">Date</option>
-			    	<?php 
+			    	<?php
 
 					for($i=1; $i<=31; $i++)
 						{
 			    			echo "<option value=".$i.">".$i."</option>";
 						}
-					?> 
+					?>
 			    </select>
 				<select name="month" class="register2" required>
 			    	<option value="">Month</option>
@@ -70,7 +76,7 @@ session_start();
 						{
 			    			echo "<option value=".$i.">".$i."</option>";
 						}
-					?> 
+					?>
 			    	<option name="years"> </option>
 			    </select>
 			  	<br><br>
@@ -89,7 +95,7 @@ session_start();
     			}
     			?>
     			</div>
-			</div>				
-		</form>	
+			</div>
+		</form>
 	</body>
 </html>
