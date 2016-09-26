@@ -30,12 +30,6 @@ if(isset($_SESSION['profile']))
 			      		<li class="active"><a href="main.php">Home</a></li>
 			      		<li><a href="#">Explore</a></li>
 			    	</ul>
-
-			    	<ul class="nav navbar-nav navbar-right">
-			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['username']; ?></a></li>
-			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
-			    	</ul>
-
 			  	</div>
 			</nav>
       <div class="bgregis">
