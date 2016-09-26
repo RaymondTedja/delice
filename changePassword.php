@@ -7,10 +7,11 @@
   <title> Delice - Profile page </title>
   <link href='https://fonts.googleapis.com/css?family=Merriweather|Montserrat' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/ray.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
   <body>
-    <div>
+    <div class="background">
 			<nav class="navbar navbar-inverse">
 			    <div class="container-fluid">
 			    	<div class="navbar-header">
@@ -28,60 +29,39 @@
 			    	</ul>
 
 			  	</div>
-        </nav>
-      </div>
-    <div class="bgprofile">
-      <div class="padprofile">
-        <img src="img/pp.jpeg" class="pp">
-        <div class="ppname">
-          <?php echo $_SESSION['profile']['firstName']?>
-          <?php echo ' ' . $_SESSION['profile']['lastName']?>
-          <a href="editprofile.php" class="buttonEdit">Edit Profile</a>
         </div>
-        <div class="bio">
-          <?php echo 'Hi, my name is ' . $_SESSION['profile']['firstName']?>
+      <div class="bgregis">
+
+    <form method="POST" action="changePass.php">
+      <div class="formpad">
+
+        <div class="pptitle" style="padding-top:20px;padding-bottom:35px;">
+              <img style="margin-right:30px;" src="img/pp.jpeg" class="pp2"> <?php echo $_SESSION['profile']['username']?>
         </div>
-        <div class="biopost">
-          <div class="bios">
-            23 Stories
-          </div>
-          <div class="bios">
-            10 Following
-          </div>
-          <div class="bios">
-            34k Followers
-          </div>
+        <input type="text" class="editProfile"  placeholder="Old Password" name="password" required><br><br>
+        <input type="text" class="editProfile"  placeholder="New Password" name="newPassword" required><br><br>
+        <input type="text" class="editProfile"  placeholder="Confirm Password" name="confirmPassword"required><br><br>
+
+        <br><br><br>
+        <input type="submit" class="testbtn3" value="Submit">
+        <br><br>
+        <!--
+        <input type="password" class="register" placeholder ="Old Password" name="password"><br><br>
+        <input type="password" class="register" placeholder ="New Password" ><br><br>
+        <input type="password" class="register" placeholder ="Confirm Password" ><br><br>
+        <input type="submit" class="testbtn3" value="Sign Up">
+        -->
+
+
+
         </div>
-        <div style="style:clear">
-      </div>
-    </div>
-    <div class="bgcontent">
-      <div class="padcon1">
-        <div class="img-fluid">
-            <div class="row">
-              <div>
-                <img src="img/b2.jpg" class="p1">
-              </div>
-              <div>
-                <img src="img/b3.jpg" class="p1">
-              </div>
-              <div>
-                <img src="img/b4.jpg" class="p1">
-              </div>
-              <div>
-                <img src="img/b5.jpg" class="p1">
-              </div>
-              <div>
-                <img src="img/b6.jpg" class="p1">
-              </div>
-              <div>
-                <img src="img/b7.jpg" class="p1">
-            </div>
-            <div style="style:clear">
-          </div>
-        </div>
-      </div>
-    </div>
+        <?php
+          if(isset($_SESSION['used'])){
+          echo $_SESSION['used'];
+          unset($_SESSION['used']);
+          }
+          ?>
+    </form>
 
     <footer>
 

@@ -330,7 +330,7 @@ hr
 .padprofile
 {
 	padding-top: 150px;
-	padding-left: 350px;
+	padding-left: 35em;
 }
 
 .pp
@@ -346,14 +346,13 @@ hr
 {
 	font-size:30px;
 	font-family:lato;
-	padding-left:250px;
+	padding-left:8.5em;
 	padding-top:20px;
 }
 
 .bio
 {
 	font-size:16px;
-	font-family:lato;
 	padding-left:255px;
 	padding-top:20px;
 }
@@ -361,7 +360,6 @@ hr
 .biopost
 {
 	font-size:16px;
-	font-family:lato;
 	padding-left:40px;
 	padding-top:40px;
 	float:left;
@@ -477,4 +475,32 @@ hr
 {
 	text-align: center;
 	margin-right: 60%;
+}
+
+.navbar
+{
+	margin-bottom: 0px !important;
+}
+
+.buttonEdit /* profile */
+{
+	border-radius: 3px;
+	border-style:solid;
+	border-width: 1px;
+	font-weight: 400;
+	outline:none;
+	overflow:hidden;
+	white-space:nowrap;
+	width:100%;
+	-webkit-appearance:none;
+	font-size: 0.6em;
+	padding:0.4em;
+	color: #727272;
+	margin-left: 1.5em;
+}
+
+.buttonEdit:hover
+{
+	text-decoration: none;
+	color:#000000;
 }

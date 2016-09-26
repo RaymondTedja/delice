@@ -20,3 +20,20 @@
 	padding: 0.7em 0.8em;
 	width:40%;
 }
+
+.buttonSmall /* profile */
+{
+	border-radius: 3px;
+	border-style:solid;
+	border-width: 1px;
+	font-weight: 400;
+	outline:none;
+	overflow:hidden;
+	white-space:nowrap;
+	width:100%;
+	-webkit-appearance:none;
+	font-size: 0.6em;
+	padding:0.4em;
+	color: #727272;
+	margin-left: 1.5em;
+}
