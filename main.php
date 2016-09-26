@@ -35,7 +35,7 @@ if(!isset($_SESSION['profile']))
 			    	<ul class="nav navbar-nav navbar-right">
 								<li><a><span class="glyphicon glyphicon-plus-sign" data-toggle="modal" data-target="#addStoryModal"></span></a></li>
 								<li><a><span class="glyphicon glyphicon-map-marker" data-toggle="modal" data-target="#checkInModal"></span></a></li>
-								<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile']['username']; ?></a></li>
+								<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile']['v_username']; ?></a></li>
 			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			    	</ul>
 
@@ -92,7 +92,7 @@ if(!isset($_SESSION['profile']))
 						<div class="col-md-6">
 							<div class="addCheckIn">
 								<img src="img/checkin.png" class="checkinImg">
-								Check in 
+								Check in
 							</div>
 						</div>
 					</div>
@@ -102,8 +102,7 @@ if(!isset($_SESSION['profile']))
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">
 						<p class="username"><?php
-						echo $_SESSION['profile']['firstName'];
-          				echo ' ' . $_SESSION['profile']['lastName']?></p>
+						echo $_SESSION['profile']['v_name']?></p>
 					</div>
 
 					<img src="img/b8.jpg" class="pmain">
@@ -122,8 +121,7 @@ if(!isset($_SESSION['profile']))
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">
 						<p class="username"><?php
-						echo $_SESSION['profile']['firstName'];
-          				echo ' ' . $_SESSION['profile']['lastName']?></p><p class="checkintext"> has checked in at Lestari Restaurant</p>
+						echo $_SESSION['profile']['v_name'] ?></p><p class="checkintext"> has checked in at Lestari Restaurant</p>
 						<div style="style:clear"></div>
 					</div>
 				</div>
