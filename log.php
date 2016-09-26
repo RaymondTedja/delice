@@ -9,12 +9,12 @@ $result = mysqli_query($conn,$query);
 if ($result && mysqli_num_rows($result) > 0)
     {
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['login']= $row['username'];
+        $_SESSION['profile'] = $row;
         header('location: index.php');
     }
 else
     {
-    	$_SESSION['error'] = "Your username or password is wrong";
+    	$_SESSION['error'] = "Your username or password is incorrect";
         header('location: login.php');
    	}
 ?>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
 	<head>
 	<title>
@@ -5,24 +9,38 @@
 	</title>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather|Montserrat' rel='stylesheet' type='text/css'>
 	<link href="css/main.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body>
+
 		<div class="mainbackground">
-			<div class="header">				
-				<ul>
-				  <li><a class="active" href="index.php">Delice</a></li>
-				  <li><a href="#">News</a></li>
-				  <li><a href="#contact">Contact</a></li>
-				  <li><a href="#about">About</a></li>
-				</ul>
-			</div>
+			<nav class="navbar navbar-inverse">
+			    <div class="container-fluid">
+			    	<div class="navbar-header">
+			        	<a class="navbar-brand" href="index.php">Delice</a>
+			    	</div>
+
+			    	<ul class="nav navbar-nav">
+			      		<li class="active"><a href="main.php">Home</a></li>
+			      		<li><a href="#">Explore</a></li>
+			    	</ul>
+
+			    	<ul class="nav navbar-nav navbar-right">
+			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile']['username']; ?></a></li>
+			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+			    	</ul>
+
+			  	</div>
+			</nav>
+
 			<div class="padcon1">
 				<div class="maincontent">
+
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">
 						<p class="username">RaisaAndriana</p>
 					</div>
+
 					<img src="img/b8.jpg" class="pmain">
 					<div class="maintext">
 						<p class="like">24 like</p>
@@ -34,6 +52,7 @@
 						Comment:
 					</div>
 				</div>
+
 				<div class="maincheckin">
 					<div class="maintext">
 						<img src="img/pp.jpeg" class="pp">

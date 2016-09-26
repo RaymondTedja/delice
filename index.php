@@ -1,3 +1,6 @@
+<?php
+	Session_start();
+?>
 <html>
 	<head>
 	<title>
@@ -9,14 +12,24 @@
 	</head>
 	<body>
 		<div class="background">
-			<div class="header">				
-				<ul>
-				  <li><a class="active" href="index.php">Delice</a></li>
-				  <li><a href="#">News</a></li>
-				  <li><a href="#contact">Contact</a></li>
-				  <li><a href="#about">About</a></li>
-				</ul>
-			</div>
+			<nav class="navbar navbar-inverse">
+			    <div class="container-fluid">
+			    	<div class="navbar-header">
+			        	<a class="navbar-brand" href="index.php">Delice</a>
+			    	</div>
+
+			    	<ul class="nav navbar-nav">
+			      		<li class="active"><a href="main.php">Home</a></li>
+			      		<li><a href="#">Explore</a></li>
+			    	</ul>
+
+			    	<ul class="nav navbar-nav navbar-right">
+			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile'] ['username']; ?></a></li>
+			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+			    	</ul>
+
+			  	</div>
+			</nav>
 			<div class="padding">
 				<div class="title1">
 					Foodies rejoice<br>
@@ -32,13 +45,13 @@
 		</div>
 		<div>
 		<div class="content1">
-			<div class="padcon1">		
+			<div class="padcon1">
 				<div class="desc">
 					<div class="title2">
 						Delice<br>
 					</div>
 					<div class="desc2">
-						Every food has a story<br> 
+						Every food has a story<br>
 						Explore them.
 					</div><br>
 					<div class="img-fluid">
@@ -62,12 +75,12 @@
 								<img src="img/b7.jpg" class="p1">
 						</div>
 					</div>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</div>
 		<footer>
-			
+
 			<div class="logo">
 				<a href="#"><img src="img/fb.png" class="soclogo"></a>
 				<a href="#"><img src="img/twi.png" class="soclogo"></a>
