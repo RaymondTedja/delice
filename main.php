@@ -9,7 +9,10 @@ session_start();
 	</title>
 	<link href='https://fonts.googleapis.com/css?family=Merriweather|Montserrat' rel='stylesheet' type='text/css'>
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/ray.css" rel="stylesheet">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
@@ -26,9 +29,49 @@ session_start();
 			    	</ul>
 
 			    	<ul class="nav navbar-nav navbar-right">
-			      		<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile']['username']; ?></a></li>
+								<li><a><span class="glyphicon glyphicon-plus-sign" data-toggle="modal" data-target="#addStoryModal"></span></a></li>
+								<li><a><span class="glyphicon glyphicon-map-marker" data-toggle="modal" data-target="#checkInModal"></span></a></li>
+								<li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?php echo $_SESSION['profile']['username']; ?></a></li>
 			      		<li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			    	</ul>
+
+						<div id="addStoryModal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h6 class="modal-title">So this happened..</h6>
+									</div>
+
+									<div class="modal-body">
+										<a><span class="glyphicon glyphicon-plus-sign"></span> Let me show you pictures</a>
+
+										<div class="form-group">
+									  	<label for="comment">Description:</label>
+									  	<textarea class="form-control" rows="5" id="comment">Please fix this. This is too hard coded</textarea>
+										</div>
+
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div id="checkInModal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
 
 			  	</div>
 			</nav>
